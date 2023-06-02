@@ -23,7 +23,7 @@ const StudyMaterial = ({history}) => {
             },
           };
         try {
-              const { data } = await axios.get(`api/upload/getAllFile`, config);
+              const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/upload/getAllFile`, config);
               console.log("pdfs",data);   
               setfiles(data.res);
             

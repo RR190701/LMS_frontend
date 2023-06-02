@@ -21,7 +21,7 @@ const Profile = (props) => {
       };
     try {
     //  console.log(Url)
-          const { data } = await axios.get(`/api/private/profile/${localStorage.getItem("username")}`, config);
+          const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/private/profile/${localStorage.getItem("username")}`, config);
           console.log(data);  
           setRole(data.user.role);     
         

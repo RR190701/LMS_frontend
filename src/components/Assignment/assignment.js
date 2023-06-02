@@ -25,7 +25,7 @@ const Assignment = ({history, courseId, role, courseName}) => {
             },
           };
         try {
-              const { data } = await axios.get(`/api/assignment/getAllAssignments/${courseId}`, config);
+              const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/assignment/getAllAssignments/${courseId}`, config);
               console.log("assignments",data);   
               setAssignments(data.res);  
               setSceDate(data.res.datePosted);

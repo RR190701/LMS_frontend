@@ -39,7 +39,7 @@ export default function AssignCourse() {
         };
       try {
       //  console.log(Url)
-            const { data } = await axios.get(`api/assignCourse/getAllUsers`, config);
+            const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/assignCourse/getAllUsers`, config);
             console.log("hello",data);  
             setUsers(data.res);   
             console.log(users);  
@@ -57,7 +57,7 @@ export default function AssignCourse() {
               },
             };
           try {
-                const { data } = await axios.get(`api/course/getAllCourses`, config);
+                const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/course/getAllCourses`, config);
                 console.log(data);   
                 setCourses(data.res);  
               
@@ -88,7 +88,7 @@ export default function AssignCourse() {
 
     try {
       const { data } = await axios.post(
-        "/api/assignCourse/assign",
+        "https://lms-backend-iw67.onrender.com/api/assignCourse/assign",
         {userId: username, courseId: course ,user_courseId:`${username}&${course}`, courseName },
         config
       );

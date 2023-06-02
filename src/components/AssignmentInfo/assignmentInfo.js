@@ -62,7 +62,7 @@ const AssignmentInfo = ({history, match}) => {
           };
         try {
             console.log("param",match.params.courseId)
-            const { data } = await axios.get(`/api/assignment/getSingleAssignment/${match.params.assId}`, config);
+            const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/assignment/getSingleAssignment/${match.params.assId}`, config);
               setAss(data.res);  
 
             

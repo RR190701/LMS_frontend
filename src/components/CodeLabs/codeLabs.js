@@ -21,7 +21,7 @@ const CodeLab = ({history, courseId, role, courseName}) => {
             },
           };
         try {
-              const { data } = await axios.get(`/api/codelab/getAllCodeLabs/${courseId}`, config);
+              const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/codelab/getAllCodeLabs/${courseId}`, config);
               console.log("codelabs",data);   
               setCodeLabs(data.res);  
             

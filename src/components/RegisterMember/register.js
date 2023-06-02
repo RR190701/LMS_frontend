@@ -47,7 +47,7 @@ export default function FormDialog() {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/register",
+        "https://lms-backend-iw67.onrender.com/api/auth/register",
         {username, password , role},
         config
       );

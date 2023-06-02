@@ -19,7 +19,7 @@ const TrainingMaterial = ({history, courseId}) => {
             },
           };
         try {
-              const { data } = await axios.get(`/api/upload/getCourseAllFiles/${courseId}`, config);
+              const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/upload/getCourseAllFiles/${courseId}`, config);
               console.log("trainingMaterial",data);   
               setMaterial(data.res);  
             

@@ -65,7 +65,7 @@ const CourseInfo = ({history, match}) => {
           };
         try {
             console.log("param",match.params.courseId)
-            const { data } = await axios.get(`/api/course/getSingleCourse/${match.params.courseId}/${localStorage.getItem("username")}`, config);
+            const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/course/getSingleCourse/${match.params.courseId}/${localStorage.getItem("username")}`, config);
               setCourse(data.res); 
               setRole(data.role);
               console.log(course);   

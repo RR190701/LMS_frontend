@@ -31,7 +31,7 @@ export default function UploadFile() {
           },
         };
       try {
-            const { data } = await axios.get(`api/course/getAllCourses`, config);
+            const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/course/getAllCourses`, config);
             console.log("courses new",data);   
             setCourses(data.res);  
           
@@ -68,7 +68,7 @@ export default function UploadFile() {
     formData.append("courseId", course);
     console.log(file);
 
-    axios.post("/api/upload/uploadFile", formData, {
+    axios.post("https://lms-backend-iw67.onrender.com/api/upload/uploadFile", formData, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("authToken")}`,
           },

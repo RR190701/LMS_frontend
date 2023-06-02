@@ -43,7 +43,7 @@ export default function AddCourse() {
 
     try {
       const { data } = await axios.post(
-        "/api/course/addCourses",
+        "https://lms-backend-iw67.onrender.com/api/course/addCourses",
         {courseName, courseInfo },
         config
       );

@@ -51,7 +51,7 @@ export default function AddAssignment({courseId}) {
 
     try {
       const { data } = await axios.post(
-        "/api/assignment/addAssignment",
+        "https://lms-backend-iw67.onrender.com/api/assignment/addAssignment",
         {info, title, courseId, datePosted:Date(), lastSubmissionDate, marks, courseId},
         config
       );

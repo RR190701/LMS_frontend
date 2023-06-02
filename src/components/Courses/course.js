@@ -26,7 +26,7 @@ const Courses = ({history}) => {
             },
           };
         try {
-              const { data } = await axios.get(`api/course/getUsersAllCourses/${localStorage.getItem("username")}`, config);
+              const { data } = await axios.get(`https://lms-backend-iw67.onrender.com/api/course/getUsersAllCourses/${localStorage.getItem("username")}`, config);
               console.log("courses",data);   
               setCourses(data.res);  
               setRole(data.role);

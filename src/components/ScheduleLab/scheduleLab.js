@@ -50,7 +50,7 @@ export default function ScheduleCodeLab({courseId, courseName}) {
 
     try {
       const { data } = await axios.post(
-        "/api/codelab/addCodeLab",
+        "https://lms-backend-iw67.onrender.com/api/codelab/addCodeLab",
         {codeLabId:uuid(),date, courseName, courseId, startTime, endTime },
         config
       );

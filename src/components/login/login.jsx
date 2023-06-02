@@ -47,7 +47,7 @@ export default function SignInSide({history}) {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/login",
+        "https://lms-backend-iw67.onrender.com/api/auth/login",
         {username, password },
         config
       );
