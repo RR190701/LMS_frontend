@@ -1,0 +1,10 @@
+.codelabs-div{
+    width:100%;
+    display :flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-height: 80vh;
+    overflow-y: scroll;
+    background-color: #d0efff;
+    margin-top: 1rem;
+}

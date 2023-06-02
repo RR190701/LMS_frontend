@@ -1,0 +1,20 @@
+.add-aasignmnet {
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.add-aasignmnet >input {
+    padding: 5px 3px;
+
+
+}
+.add-aasignmnet>label{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.add-aasignmnet>textarea{
+    max-width: 100%;
+    height: 200px;
+}

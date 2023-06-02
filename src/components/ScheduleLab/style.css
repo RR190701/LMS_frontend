@@ -1,0 +1,11 @@
+.lab-schedule{
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+
+}
+.lab-schedule>p{
+    font-size: 13px;
+    font-weight: 500;
+    margin: .6rem 0 0 0 ;
+}
